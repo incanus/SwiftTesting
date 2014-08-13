@@ -11,6 +11,12 @@
 		DDDFE9C1199BD55800D084D9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDDFE9C0199BD55800D084D9 /* ViewController.swift */; };
 		DDDFE9C4199BD55800D084D9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDDFE9C2199BD55800D084D9 /* Main.storyboard */; };
 		DDDFE9E2199BD94900D084D9 /* MBFingerTipWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = DDDFE9E1199BD94900D084D9 /* MBFingerTipWindow.m */; };
+		DDDFE9F3199BDF7E00D084D9 /* libMapboxGL.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DDDFE9F1199BDF7E00D084D9 /* libMapboxGL.a */; };
+		DDDFE9F4199BDF7E00D084D9 /* MapboxGL.bundle in Resources */ = {isa = PBXBuildFile; fileRef = DDDFE9F2199BDF7E00D084D9 /* MapboxGL.bundle */; };
+		DDDFE9F6199BE07000D084D9 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDDFE9F5199BE07000D084D9 /* GLKit.framework */; };
+		DDDFE9F8199BE07D00D084D9 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DDDFE9F7199BE07D00D084D9 /* libz.dylib */; };
+		DDDFE9FA199BE0B500D084D9 /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DDDFE9F9199BE0B500D084D9 /* libc++.dylib */; };
+		DDDFE9FC199BE3B600D084D9 /* style.json in Resources */ = {isa = PBXBuildFile; fileRef = DDDFE9FB199BE3B600D084D9 /* style.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +28,18 @@
 		DDDFE9DF199BD94900D084D9 /* Swift Testing-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Swift Testing-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
 		DDDFE9E0199BD94900D084D9 /* MBFingerTipWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MBFingerTipWindow.h; path = Fingertips/MBFingerTipWindow.h; sourceTree = "<group>"; };
 		DDDFE9E1199BD94900D084D9 /* MBFingerTipWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MBFingerTipWindow.m; path = Fingertips/MBFingerTipWindow.m; sourceTree = "<group>"; };
+		DDDFE9E5199BDF7E00D084D9 /* MGLMapView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGLMapView.h; sourceTree = "<group>"; };
+		DDDFE9E6199BDF7E00D084D9 /* MGLStyleFunctionValue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGLStyleFunctionValue.h; sourceTree = "<group>"; };
+		DDDFE9E7199BDF7E00D084D9 /* MGLTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGLTypes.h; sourceTree = "<group>"; };
+		DDDFE9E8199BDF7E00D084D9 /* NSArray+MGLAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+MGLAdditions.h"; sourceTree = "<group>"; };
+		DDDFE9E9199BDF7E00D084D9 /* NSDictionary+MGLAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+MGLAdditions.h"; sourceTree = "<group>"; };
+		DDDFE9EA199BDF7E00D084D9 /* UIColor+MGLAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+MGLAdditions.h"; sourceTree = "<group>"; };
+		DDDFE9F1199BDF7E00D084D9 /* libMapboxGL.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libMapboxGL.a; path = "Mapbox GL/dist/libMapboxGL.a"; sourceTree = "<group>"; };
+		DDDFE9F2199BDF7E00D084D9 /* MapboxGL.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = MapboxGL.bundle; path = "Mapbox GL/dist/MapboxGL.bundle"; sourceTree = "<group>"; };
+		DDDFE9F5199BE07000D084D9 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		DDDFE9F7199BE07D00D084D9 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		DDDFE9F9199BE0B500D084D9 /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
+		DDDFE9FB199BE3B600D084D9 /* style.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = style.json; path = "Mapbox GL/dist/MapboxGL.bundle/styles/outdoors/style.json"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +47,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DDDFE9F6199BE07000D084D9 /* GLKit.framework in Frameworks */,
+				DDDFE9F3199BDF7E00D084D9 /* libMapboxGL.a in Frameworks */,
+				DDDFE9FA199BE0B500D084D9 /* libc++.dylib in Frameworks */,
+				DDDFE9F8199BE07D00D084D9 /* libz.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,8 +60,13 @@
 		DDDFE9B0199BD55800D084D9 = {
 			isa = PBXGroup;
 			children = (
-				DDDFE9DB199BD8DD00D084D9 /* Fingertips */,
+				DDDFE9FB199BE3B600D084D9 /* style.json */,
+				DDDFE9F9199BE0B500D084D9 /* libc++.dylib */,
+				DDDFE9F7199BE07D00D084D9 /* libz.dylib */,
+				DDDFE9F5199BE07000D084D9 /* GLKit.framework */,
 				DDDFE9BB199BD55800D084D9 /* Swift Testing */,
+				DDDFE9DB199BD8DD00D084D9 /* Fingertips */,
+				DDDFE9E3199BDF6400D084D9 /* Mapbox GL */,
 				DDDFE9BA199BD55800D084D9 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -79,6 +106,30 @@
 				DDDFE9E1199BD94900D084D9 /* MBFingerTipWindow.m */,
 			);
 			name = Fingertips;
+			sourceTree = "<group>";
+		};
+		DDDFE9E3199BDF6400D084D9 /* Mapbox GL */ = {
+			isa = PBXGroup;
+			children = (
+				DDDFE9E4199BDF7E00D084D9 /* Headers */,
+				DDDFE9F1199BDF7E00D084D9 /* libMapboxGL.a */,
+				DDDFE9F2199BDF7E00D084D9 /* MapboxGL.bundle */,
+			);
+			name = "Mapbox GL";
+			sourceTree = "<group>";
+		};
+		DDDFE9E4199BDF7E00D084D9 /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				DDDFE9E5199BDF7E00D084D9 /* MGLMapView.h */,
+				DDDFE9E6199BDF7E00D084D9 /* MGLStyleFunctionValue.h */,
+				DDDFE9E7199BDF7E00D084D9 /* MGLTypes.h */,
+				DDDFE9E8199BDF7E00D084D9 /* NSArray+MGLAdditions.h */,
+				DDDFE9E9199BDF7E00D084D9 /* NSDictionary+MGLAdditions.h */,
+				DDDFE9EA199BDF7E00D084D9 /* UIColor+MGLAdditions.h */,
+			);
+			name = Headers;
+			path = "Mapbox GL/dist/Headers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,6 +190,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				DDDFE9C4199BD55800D084D9 /* Main.storyboard in Resources */,
+				DDDFE9F4199BDF7E00D084D9 /* MapboxGL.bundle in Resources */,
+				DDDFE9FC199BE3B600D084D9 /* style.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,6 +309,11 @@
 				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = "Swift Testing/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Mapbox",
+					GL/dist,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Swift Testing-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -270,6 +328,11 @@
 				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = "Swift Testing/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Mapbox",
+					GL/dist,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Swift Testing-Bridging-Header.h";
 			};

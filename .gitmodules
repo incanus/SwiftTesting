@@ -1,3 +1,6 @@
 [submodule "Fingertips"]
 	path = Fingertips
 	url = https://github.com/mapbox/fingertips
+[submodule "Mapbox GL"]
+	path = Mapbox GL
+	url = https://github.com/mapbox/mapbox-gl-cocoa
