@@ -7,12 +7,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let styleJSON = NSString.stringWithContentsOfFile(NSBundle.mainBundle().pathForResource("style", ofType: "json"),
-                                                          encoding: NSString.defaultCStringEncoding(),
-                                                          error: nil)
-
         let mapView = MGLMapView(frame: view.bounds,
-                                 styleJSON: styleJSON,
                                  accessToken: accessToken)
 
         mapView.setCenterCoordinate(CLLocationCoordinate2DMake(46.049900, -122.095678),
