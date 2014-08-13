@@ -14,6 +14,8 @@ class ViewController: UIViewController {
                 zoomLevel: 12,
                 animated: false)
 
+        mapView.useBundledStyleNamed("outdoors")
+
         view.addSubview(mapView)
     }
 }
