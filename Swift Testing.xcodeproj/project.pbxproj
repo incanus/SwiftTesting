@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DDCB7507199BEE0700DA5733 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDCB7506199BEE0700DA5733 /* CoreLocation.framework */; };
 		DDDFE9BF199BD55800D084D9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDDFE9BE199BD55800D084D9 /* AppDelegate.swift */; };
 		DDDFE9C1199BD55800D084D9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDDFE9C0199BD55800D084D9 /* ViewController.swift */; };
 		DDDFE9C4199BD55800D084D9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDDFE9C2199BD55800D084D9 /* Main.storyboard */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DDCB7506199BEE0700DA5733 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		DDDFE9B9199BD55800D084D9 /* Swift Testing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Swift Testing.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDDFE9BD199BD55800D084D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DDDFE9BE199BD55800D084D9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -47,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DDCB7507199BEE0700DA5733 /* CoreLocation.framework in Frameworks */,
 				DDDFE9F6199BE07000D084D9 /* GLKit.framework in Frameworks */,
 				DDDFE9F3199BDF7E00D084D9 /* libMapboxGL.a in Frameworks */,
 				DDDFE9FA199BE0B500D084D9 /* libc++.dylib in Frameworks */,
@@ -60,6 +63,7 @@
 		DDDFE9B0199BD55800D084D9 = {
 			isa = PBXGroup;
 			children = (
+				DDCB7506199BEE0700DA5733 /* CoreLocation.framework */,
 				DDDFE9FB199BE3B600D084D9 /* style.json */,
 				DDDFE9F9199BE0B500D084D9 /* libc++.dylib */,
 				DDDFE9F7199BE07D00D084D9 /* libz.dylib */,
@@ -311,8 +315,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/Mapbox",
-					GL/dist,
+					"\"$(PROJECT_DIR)/Mapbox GL/dist\"",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Swift Testing-Bridging-Header.h";
@@ -330,8 +333,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/Mapbox",
-					GL/dist,
+					"\"$(PROJECT_DIR)/Mapbox GL/dist\"",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Swift Testing-Bridging-Header.h";
@@ -357,6 +359,7 @@
 				DDDFE9D7199BD55800D084D9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

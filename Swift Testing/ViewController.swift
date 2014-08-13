@@ -2,7 +2,6 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    var mapView: MGLMapView?
     let accessToken = ""
 
     override func viewDidLoad() {
@@ -12,14 +11,14 @@ class ViewController: UIViewController {
                                                           encoding: NSString.defaultCStringEncoding(),
                                                           error: nil)
 
-        mapView = MGLMapView(frame: view.bounds,
-                             styleJSON: styleJSON,
-                             accessToken: accessToken)
+        let mapView = MGLMapView(frame: view.bounds,
+                                 styleJSON: styleJSON,
+                                 accessToken: accessToken)
 
-        view.addSubview(mapView!)
+        mapView.setCenterCoordinate(CLLocationCoordinate2DMake(46.049900, -122.095678),
+                zoomLevel: 12,
+                animated: false)
 
-        mapView!.setCenterCoordinate(CLLocationCoordinate2DMake(46.049900, -122.095678),
-                 zoomLevel: 12,
-                 animated: false)
+        view.addSubview(mapView)
     }
 }
