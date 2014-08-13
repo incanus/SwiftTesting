@@ -2,7 +2,7 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    let accessToken = ""
+    let accessToken = "<your Mapbox API access token here>"
 
     override func viewDidLoad() {
         super.viewDidLoad()
