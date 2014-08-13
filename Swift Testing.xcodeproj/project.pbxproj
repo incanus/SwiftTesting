@@ -10,6 +10,7 @@
 		DDDFE9BF199BD55800D084D9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDDFE9BE199BD55800D084D9 /* AppDelegate.swift */; };
 		DDDFE9C1199BD55800D084D9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDDFE9C0199BD55800D084D9 /* ViewController.swift */; };
 		DDDFE9C4199BD55800D084D9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDDFE9C2199BD55800D084D9 /* Main.storyboard */; };
+		DDDFE9E2199BD94900D084D9 /* MBFingerTipWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = DDDFE9E1199BD94900D084D9 /* MBFingerTipWindow.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -18,6 +19,9 @@
 		DDDFE9BE199BD55800D084D9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DDDFE9C0199BD55800D084D9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		DDDFE9C3199BD55800D084D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DDDFE9DF199BD94900D084D9 /* Swift Testing-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Swift Testing-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
+		DDDFE9E0199BD94900D084D9 /* MBFingerTipWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MBFingerTipWindow.h; path = Fingertips/MBFingerTipWindow.h; sourceTree = "<group>"; };
+		DDDFE9E1199BD94900D084D9 /* MBFingerTipWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MBFingerTipWindow.m; path = Fingertips/MBFingerTipWindow.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -34,6 +38,7 @@
 		DDDFE9B0199BD55800D084D9 = {
 			isa = PBXGroup;
 			children = (
+				DDDFE9DB199BD8DD00D084D9 /* Fingertips */,
 				DDDFE9BB199BD55800D084D9 /* Swift Testing */,
 				DDDFE9BA199BD55800D084D9 /* Products */,
 			);
@@ -62,8 +67,18 @@
 			isa = PBXGroup;
 			children = (
 				DDDFE9BD199BD55800D084D9 /* Info.plist */,
+				DDDFE9DF199BD94900D084D9 /* Swift Testing-Bridging-Header.h */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DDDFE9DB199BD8DD00D084D9 /* Fingertips */ = {
+			isa = PBXGroup;
+			children = (
+				DDDFE9E0199BD94900D084D9 /* MBFingerTipWindow.h */,
+				DDDFE9E1199BD94900D084D9 /* MBFingerTipWindow.m */,
+			);
+			name = Fingertips;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,6 +151,7 @@
 			files = (
 				DDDFE9C1199BD55800D084D9 /* ViewController.swift in Sources */,
 				DDDFE9BF199BD55800D084D9 /* AppDelegate.swift in Sources */,
+				DDDFE9E2199BD94900D084D9 /* MBFingerTipWindow.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -237,9 +253,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = "Swift Testing/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Swift Testing-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -248,9 +267,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = "Swift Testing/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Swift Testing-Bridging-Header.h";
 			};
 			name = Release;
 		};

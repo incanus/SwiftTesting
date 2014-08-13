@@ -1,0 +1,3 @@
+[submodule "Fingertips"]
+	path = Fingertips
+	url = https://github.com/mapbox/fingertips
